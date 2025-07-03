@@ -3,15 +3,13 @@
 import re
 
 hearders_str='''
-priority:u=0, i
-sec-ch-ua:"Not)A;Brand";v="8", "Chromium";v="138", "Microsoft Edge";v="138"
-sec-ch-ua-mobile:?0
-sec-ch-ua-platform:"Windows"
-sec-fetch-dest:document
-sec-fetch-mode:navigate
-sec-fetch-site:none
-sec-fetch-user:?1
-upgrade-insecure-requests:1
+        __VIEWSTATE:/ wEPDwUKLTU5OTg0MDIwNw8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBZGQGi0FCmPHMP + KelvQVsoBoqE2Axg ==
+        __VIEWSTATEGENERATOR:C93BE1AE
+        from
+        email:402755838@qq.com
+        pwd:zhang2925385
+        code:DCZF
+        denglu:登录
 '''
 
 pattern='^(.*?):(.*)$'

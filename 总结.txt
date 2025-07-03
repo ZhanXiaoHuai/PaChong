@@ -1,0 +1,3 @@
+当想要把两个不一样xpath的文件一起拷出来的时候 可以用|实现
+比如一个xpath为div/li/a 一个为div/a
+那么可以用tree.xpath('//div/li/a | //div/a')这样来解析 一起把结果a返回出来
