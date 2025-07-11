@@ -15,3 +15,6 @@ pool.map(get_page,name_list)#多线程方法，第一个传函数 第二传参�
 end_time=time.time()
 
 print('用时：',end_time-start_time)
+
+pool.close()
+pool.join()#释放资源
