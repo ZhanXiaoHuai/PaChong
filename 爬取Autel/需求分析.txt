@@ -1,0 +1,33 @@
+爬取道通919 431车型支持
+
+1.查询产品所支持的车型有哪些 getModel
+传入参数：地区、语言、产品名称
+lg:cn
+language:cn
+product:MaxiSys%20919
+https://www.auteltech.cn/vehicle-coverage/getModel?lg=cn&language=cn&product=MaxiSys%20MS908S%20II
+
+
+
+2.查询具体车型 getCar
+lg:cn
+language:cn
+product:MaxiSys%20919
+carserie:%E9%A9%AC%E8%87%AA%E8%BE%BE
+
+https://www.auteltech.cn/vehicle-coverage/getCar?lg=cn&language=cn&product=MaxiSys%20919&carserie=%E9%A9%AC%E8%87%AA%E8%BE%BE
+
+
+3.查询车型数据 getData
+lg:cn
+language:cn
+product:MaxiSys%20919
+carserie:%E9%A9%AC%E8%87%AA%E8%BE%BE
+carName
+year
+subfunction
+pageSize:2000
+pageNo:0
+
+https://www.auteltech.cn/vehicle-coverage/getData?lg=cn&language=cn&product=MaxiSys%20919&carserie=%E9%A9%AC%E8%87%AA%E8%BE%BE&carName=&year=&subfunction=&pageSize=2000&pageNo=0
+

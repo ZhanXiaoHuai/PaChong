@@ -10,7 +10,7 @@ if __name__=='__main__':
     headers = {
         'User-Agent': random_user_agent
     }
-    page_text=requests.get(url=url,headers=headers,proxies={"http":"http://182.131.17.19:80"}).text#proxies代理IP和端口号 伪装IP
+    page_text=requests.get(url=url,headers=headers,proxies={"http":"http://47.96.252.171:80","http":"http://121.43.100.184:80"}).text#proxies代理IP和端口号 伪装IP
     with open('IP.html','w',encoding='utf-8')as fp:
         fp.write(page_text)
 
