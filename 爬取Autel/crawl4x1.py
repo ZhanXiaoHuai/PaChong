@@ -23,7 +23,7 @@ option.add_argument('--disable-gpu')
 
 def Crawl():
     global flag_debug
-    lsMakes=['MAZDA']
+    lsMakes=['USAFORD']
 
     for makename in lsMakes:
         pageNum = GetTotalPage(makename)
@@ -46,10 +46,10 @@ def GetTotalPage(makename):
     #点击车系抓取网页
     driver = webdriver.Edge(options=option)#规避检测+无头浏览
     driver.get("http://qcar.x431.com/qcar/#/pc/index?q=e30%3D")
-    time.sleep(random.uniform(2, 3))
+    time.sleep(random.uniform(1.5, 3))
     vehicle_name=ConvertMakeName(makename)
     driver.find_element(By.XPATH, value=f"//p[text()='{vehicle_name}']").click()#找到对应名字进行点击
-    time.sleep(random.uniform(2, 3))
+    time.sleep(random.uniform(1.5, 3))
     number=int(driver.find_element(by=By.XPATH, value="//li[@class='number'][last()]").text)#获取最后一个number标签->总页数
     # 等待一些时间后关闭浏览器 我是IKUN嘻嘻
     time.sleep(2.5)

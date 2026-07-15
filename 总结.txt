@@ -1,3 +1,14 @@
 当想要把两个不一样xpath的文件一起拷出来的时候 可以用|实现
 比如一个xpath为div/li/a 一个为div/a
 那么可以用tree.xpath('//div/li/a | //div/a')这样来解析 一起把结果a返回出来
+
+selenium添加此参数 可以使浏览器一直处于打开状态 使进程分离程序运行完了就不会关闭了
+option=EdgeOptions()
+option.add_experimental_option("detach", True)
+bro=webdriver.Edge(options=option,service=service)#传参进去 无头浏览器
+
+pyinstaller打包的命令
+pyinstaller --onefile --icon=huawei.ico --noconsole Register.py
+pyinstaller --onefile --noconsole ExtendSimulator.py
+pyinstaller --onefile --noconsole --strip check.py
+使用 --strip 来去除不必要的调试信息和符号表。
